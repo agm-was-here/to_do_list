@@ -13,4 +13,4 @@ def frontpage(request):
 def disp(request):
     disp_task = request.GET['task1']
     disp_desc=request.GET['desc1']
-    return render(request, 'display.html',{'task' : disp_task},{'desc' : disp_desc})
+    return render(request, 'display.html',{'task' : disp_task})
