@@ -4,13 +4,13 @@ from django.conf import settings
 from django.utils import timezone
 
 
-class to_do_list(models.Model):
+class given_task(models.Model):
     task = models.CharField(max_length=200)
     description = models.TextField()
-    date=models.DateTimeField(default=timezone.now)
+    date=models.DateField()
     
-    def save(self):
-        self.save()
+    # def save(self):
+    #     self.save()
     
     def task_to_string(self):
         return self
