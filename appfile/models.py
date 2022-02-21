@@ -9,9 +9,14 @@ class given_task(models.Model):
     description = models.TextField()
     date=models.DateField()
     
-    # def save(self):
-    #     self.save()
+#     # def save(self):
+#     #     self.save()
     
     def task_to_string(self):
         return self
+    
+    
+    
+class TodoListItem(models.Model):
+   tsk = models.TextField()  
     
