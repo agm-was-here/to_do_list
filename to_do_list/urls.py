@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from appfile.views import  deleteitem
 
 urlpatterns = [ 
     path('appfile/', include('appfile.urls')),
     path('admin/', admin.site.urls),
+    path('delete/<int:i>',deleteitem),
 ]

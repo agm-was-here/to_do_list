@@ -9,7 +9,11 @@ s{% extends 'base.html'%}
 <ul>
     {% for i in item %}
     <li>{{i.tsk}}</li>
-    {% endfor %}
+
+    <form action="/delete/{{i.id}} ">
+        <button>delete</button>
+    </form>
+    {% endfor%}
 </ul>
 
 {% endblock %}

@@ -20,3 +20,8 @@ def todoview(request):
     new = TodoListItem(tsk=x)
     new.save()
     return HttpResponseRedirect("/appfile/frontpage")
+
+def deleteitem(request,i):
+     n = TodoListItem.objects.get(id= i)
+     n.delete()
+     return HttpResponseRedirect("/appfile/frontpage")
