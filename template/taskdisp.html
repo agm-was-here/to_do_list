@@ -338,6 +338,7 @@
             font-size: 10px;
             padding: 4px 8px;
             border-radius: 20px;
+            text-align: right;
 
             &.approved {
                 background-color: var(--tag-color-one);
@@ -427,7 +428,9 @@
                         <path
                             d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
                     </svg>
-                    <span>Inbox</span>
+                    <span>
+                        <a href="{% url 'index'%}">
+                            welcome page</span></a>
                 </li>
             </ul>
         </div>
@@ -447,15 +450,15 @@
                         {% for tsk in list %}
                         {{ tsk.task }} <br>
                     </span>
-                    <span class="tag approved"></span>
-                    {{tsk.date}}
+                    <div class="tag approved">
+                        {{tsk.date}}
+                    </div>
+                    <span class="label-text">
+                        {{tsk.description}}
                     </span>
                     <br>
-                    <span class="label-text">
-                        {{tsk.description}} <br> <br>
-                    </span>
+                    <br>
                     {% endfor %}
-                    </span>
             </div>
         </div>
     </div>
@@ -475,8 +478,10 @@
         <div class="right-content">
             <div class="task-box yellow">
                 <div class="description-task">
-                    <div class="time">08:00 - 09:00 AM</div>
-                    <div class="task-name">Product Review</div>
+                    <div class="time">Note to user </div>
+                    <div class="task-name">this is the spot where you come to get the tasks that has been assigned to
+                        you also check when is the dead line of the particular task-box
+                    </div>
                 </div>
             </div>
         </div>
