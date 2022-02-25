@@ -1,7 +1,7 @@
 
 ![](https://img.shields.io/pypi/djversions/django?style=for-the-badge)
 ![](https://img.shields.io/badge/CSS-563D7C?style=for-the-badge&logo=css3&logoColor=white)
-![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)]
 <h1>TASK MANAGER</h1>
 
 this project is implemented using  Django
@@ -58,7 +58,7 @@ Remember to fork this repo and feel free to send a pull request 😀
 
 
 
-## license 📜📜
+## license [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
 This project is licensed under the [MIT LICENSE](https://choosealicense.com/licenses/mit/)
 
