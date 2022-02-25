@@ -1,4 +1,4 @@
-# to_do_list
+
 ![](https://img.shields.io/pypi/djversions/django?style=for-the-badge)
 ![](https://img.shields.io/badge/CSS-563D7C?style=for-the-badge&logo=css3&logoColor=white)
 ![]([![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/))
@@ -7,7 +7,8 @@
 this project is implemented using  Django
 
 
-This application act as a to do list as well as a task scheduler,depending on the users request 
+This application act as a to do list as well as a task scheduler,depending on the users request. THE Aadmin can specify which all task is to be completed with deadline and also the user can create his on to do list.
+
 
 ## Getting started 🤘🤘
 
@@ -43,6 +44,8 @@ to access the application open [http://127.0.0.1:8000/appfile](http://127.0.0.1:
 
 NB:to access the admin site change the "/appfile" to "/admin"
 
+
+
 ### Bugs found 🕵️‍♂️🕵️‍♂️
  
  There are a lot of imperfection in the application which will be improved as soon as possible
@@ -54,9 +57,14 @@ Your contributions are always welcomed whole hartedly ❤.
 Remember to fork this repo and feel free to send a pull request 😀
 
 
+
 ## license 📜📜
 
 This project is licensed under the [MIT LICENSE](https://choosealicense.com/licenses/mit/)
+
+
+
+
 
 
 NB: i have set "DEBUG=TRUE" in the [settings.py](https://github.com/agm-was-here/to_do_list/blob/main/to_do_list/settings.py) before deploying change it into "DEBUG=FALSE"
