@@ -1,69 +1,151 @@
 {% extends 'base.html'%}
 {% block content%}
-
 <style>
-        div.overlay {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
+        html {
+                font-size: 62.5%;
+        }
+
+        .noscroll {
+                overflow: hidden
         }
 
         body {
-                height: 500px;
+                font-size: 1.5em;
+                line-height: 1.6;
+                font-weight: 400;
+                font-family: 'Poppins', sans-serif;
+                color: #555555;
+                overflow-x: hidden;
         }
 
-        div.overlay {
-                background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
-                text-align: center;
-                width: 100%;
+        img {
                 height: auto;
-                background-size: cover;
-                background-attachment: fixed;
-                position: relative;
-                overflow: hidden;
-                border-radius: 0 0 85% 85% / 30%;
         }
 
-        div.overlay {
-                width: 100%;
+        .hpanel {
+                position: absolute;
+                top: 0;
+                bottom: 0;
                 height: 100%;
-                padding: 50px;
-                color: #FFF;
-                text-shadow: 1px 1px 1px #333;
-                background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                color: #fff
+        }
+
+        .leftpan {
+                left: -4%;
+                width: 60%;
+                -webkit-transform: skew(-8deg);
+                -moz-transform: skew(-8deg);
+                -o-transform: skew(-8deg);
+        }
+
+        .leftpan .background-img {
+                background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-code.png);
+        }
+
+        .rightpan {
+                right: -4%;
+                width: 59%;
+                -webkit-transform: skew(8deg);
+                -moz-transform: skew(8deg);
+                -o-transform: skew(8deg);
+        }
+
+        .rightpan .background-img {
+                background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-post-its.png)
+        }
+
+        .background-img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
 
         }
 
-        h1 {
-                font-family: 'Dancing Script', cursive;
-                font-size: 80px;
-                margin-bottom: 30px;
+        .leftpan .content-area {
+                -webkit-transform: skew(8deg);
+                -moz-transform: skew(8deg);
+                -o-transform: skew(8deg);
+
         }
 
-        h3,
-        p {
-                font-family: 'Open Sans', sans-serif;
-                margin-bottom: 30px;
+        .rightpan .content-area {
+                -webkit-transform: skew(-8deg);
+                -moz-transform: skew(-8deg);
+                -o-transform: skew(-8deg);
         }
 
-        button {
-                border: none;
-                outline: none;
-                padding: 10px 20px;
+        .content-area {
+                text-align: center;
+                margin: 20vh auto;
+                width: 350px
+        }
+
+        .content-area h2 {
+                font-size: 2.8rem;
+                margin-bottom: 50px
+        }
+
+        .btn-area {
+                margin-top: 50px
+        }
+
+        .btn-area {
+                padding: 13px 0;
+                width: 70%;
+                text-align: center;
+                background-color: #fff;
                 border-radius: 50px;
-                color: #333;
-                background: #fff;
-                margin-bottom: 50px;
-                box-shadow: 0 3px 20px 0 #0000003b;
+                display: inline-block;
+                font-size: 18px;
+                font-weight: 500;
+                text-decoration: none;
+                color: #000;
+                letter-spacing: 1px;
         }
 
-        button:hover {
-                cursor: pointer;
-        }
+        @media only screen and (max-width : 600px) {}
 </style>
 
 
-<body>
+
+<div class="section hpanel leftpan">
+        <div class="background-img">
+                <div class="content-area">
+                        <h2>TASK LIST</h2> click the button below to check what all tasks have been given to you by your
+                        team captain,
+                        dont forget to read the last date.....😁😁
+                        <form action="taskdisp">
+                                <button class="btn-area">Assigned task</button>
+                        </form>
+                </div>
+        </div>
+</div>
+
+
+<div class="section hpanel rightpan">
+        <div class="background-img">
+                <div class="content-area">
+                        <h2>TASK MANAGER</h2> Click the below button to create a to-do list of your own to keep you on
+                        top of you game
+
+                        create only the task which you can complete.....<br>(╯°□°）╯︵ ┻━┻
+                        <form action="frontpage">
+                                <button class="btn-area">LETS BEGIN</button>
+                </div>
+        </div>
+
+</div>
+
+</div>
+<!-- 
         <div class="overlay">
                 <h1>WORK LAB</h1>
                 <h3>why organising is necessary</h3>
@@ -75,7 +157,7 @@
                 <form action="taskdisp">
                         <button>Assigned task</button>
                 </form>
-        </div>
+        </div> -->
 
 </body>
 {%endblock%}

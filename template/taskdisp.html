@@ -448,7 +448,7 @@
                 <label for="item-1">
                     <span class="label-text">
                         {% for tsk in list %}
-                        {{ tsk.task }} <br>
+                        <u>{{ tsk.task }}</u><br>
                     </span>
                     <div class="tag approved">
                         {{tsk.date}}
@@ -456,8 +456,8 @@
                     <span class="label-text">
                         {{tsk.description}}
                     </span>
-                    <br>
-                    <br>
+                    <hr class="dotted">
+
                     {% endfor %}
             </div>
         </div>
