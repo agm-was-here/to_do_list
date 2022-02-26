@@ -28,7 +28,7 @@ $ pip install django
 
 4. To start the application run the following command:
 ```bash
-python manage,py runserver
+python manage.py runserver
 
 ```
 5.create a superuser in the terminal to act as the admin, you can do this by running 
